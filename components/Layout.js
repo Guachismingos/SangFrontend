@@ -1,3 +1,4 @@
+import { ThemeProvider } from "../context/ThemeContext";
 import { View } from "react-native";
 import React from "react";
 import Header from "./Header";
@@ -5,7 +6,9 @@ import Header from "./Header";
 const Layout = () => {
   return (
     <View>
-      <Header />
+      <ThemeProvider>
+        <Header />
+      </ThemeProvider>
     </View>
   );
 };

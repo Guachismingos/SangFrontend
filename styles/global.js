@@ -1,7 +1,8 @@
 import { StyleSheet } from "react-native";
 import { mainColor } from "./variables";
 
-export const Containerstyles = StyleSheet.create({
+export const GlobalStyles = StyleSheet.create({
+  //Containers
   mainContainer: {
     flex: 1,
     justifyContent: "center",
@@ -12,6 +13,8 @@ export const Containerstyles = StyleSheet.create({
     height: 50,
     alignItems: "center",
     flexDirection: "row",
-    justifyContent: "space-around"
+    justifyContent: "space-around",
   },
+  //Texts
+  h1: {},
 });
