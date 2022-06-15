@@ -14,30 +14,41 @@ export const ThemeProvider = ({ children }) => {
   const GlobalStyles = StyleSheet.create({
     //Containers
     mainContainer: {
+      padding: 30,
       flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
     },
     headerContainer: {
       backgroundColor: mainColor,
       justifyContent: "center",
       alignItems: "flex-start",
       display: "flex",
-      height: 50,
-      paddingLeft: 20 
+      height: 75,
+      paddingLeft: 10,
     },
     //Texts
     h1: {
       fontFamily: "Quick-Sand",
-      fontWeight: "900",
-      fontSize: 18
-      
+      fontWeight: "bold",
+      fontSize: 18,
     },
+    //Images
+    imageLogo: {
+      flex: 1,
+      width: null,
+      height: null,
+      resizeMode: "contain",
+    },
+    //Ui Elements
+    uiCardButton : {
+      borderColor: mainColor
+    }
   });
 
   const value = { GlobalStyles };
 
   return (
-    <ThemeContext.Provider value={value}>{fontsLoaded && children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={value}>
+      {fontsLoaded && children}
+    </ThemeContext.Provider>
   );
 };
