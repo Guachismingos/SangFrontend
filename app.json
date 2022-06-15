@@ -4,10 +4,10 @@
     "slug": "sang-frontend",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/favicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/favicon.png",
+      "image": "./assets/splash_image.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

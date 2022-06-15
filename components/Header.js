@@ -1,15 +1,16 @@
-import { Text, StatusBar, SafeAreaView } from "react-native";
-import { mainColor } from "../styles/variables";
+import { Text, View, Image } from "react-native";
 import { useTheme } from "./../context/ThemeContext";
+import logo from "../assets/white_logo.png";
 
 const Header = () => {
   const { GlobalStyles } = useTheme();
 
   return (
-    <SafeAreaView style={GlobalStyles.headerContainer}>
-      <StatusBar backgroundColor={mainColor} hidden={true} />
-      <Text style={GlobalStyles.h1}>Grupo Sang</Text>
-    </SafeAreaView>
+    <View style={GlobalStyles.headerContainer}>
+      <View style={{ width: 120, flex: 1 }}>
+        <Image source={logo} style={GlobalStyles.imageLogo} />
+      </View>
+    </View>
   );
 };
 
